@@ -85,6 +85,7 @@ production:
   primary: &primary_production
     <<: *default
     database: coffee_production
+    url: <%= ENV['DATABASE_URL'] %>
     username: coffee
     password: <%= ENV["COFFEE_DATABASE_PASSWORD"] %>
   cache:
