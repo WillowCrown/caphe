@@ -1,0 +1,747 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Chiều cao 100% của viewport */
+}
+
+/* Container */
+.container {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100%; /* Chiều cao 100% */
+}
+
+/* Form Box */
+.form-box {
+    background-color: #ffffff; /* Nền trắng cho hộp biểu mẫu */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+    padding: 30px; /* Padding cho hộp */
+    width: 100%; /* Chiều rộng 100% */
+    max-width: 500px; /* Chiều rộng tối đa */
+}
+
+/* Form Title */
+h2 {
+    font-size: 24px; /* Kích thước chữ tiêu đề */
+    color: #333; /* Màu chữ */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px; /* Khoảng cách giữa các nhóm trường */
+}
+
+/* Form Label */
+.form-label {
+    font-weight: bold; /* Chữ đậm cho nhãn */
+    margin-bottom: 5px; /* Khoảng cách dưới nhãn */
+}
+
+/* Form Control */
+.form-control,
+.form-control-file {
+    width: 100%; /* Chiều rộng 100% */
+    padding: 10px; /* Padding cho các trường */
+    border: 1px solid #ced4da; /* Đường viền */
+    border-radius: 4px; /* Bo góc */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+}
+
+/* Description Area */
+.description-area {
+    resize: none; /* Không cho phép thay đổi kích thước */
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px; /* Padding cho nút */
+    border-radius: 4px; /* Bo góc cho nút */
+    cursor: pointer; /* Con trỏ khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+/* Success Button */
+.btn-success {
+    background-color: #28a745; /* Màu nền xanh lá */
+    color: white; /* Màu chữ trắng */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Màu nền khi hover */
+}
+
+/* Danger Button */
+.btn-danger {
+    background-color: #dc3545; /* Màu nền đỏ */
+    color: white; /* Màu chữ trắng */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Màu nền khi hover */
+}
+
+/* Margin Left for Cancel Button */
+.ml-2 {
+    margin-left: 0.5rem; /* Khoảng cách bên trái cho nút hủy */
+}
+
+/* Text Alignment */
+.text-right {
+    text-align: right; /* Căn phải cho nút */
+}
+
+/* Định dạng tiêu đề */
+.text_center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Định dạng liên kết hành động */
+.action-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Màu xanh dương */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Màu xanh đậm khi hover */
+}
+
+/* Định dạng danh sách sản phẩm */
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Khoảng cách giữa các thẻ sản phẩm */
+}
+
+/* Định dạng thẻ sản phẩm */
+.product-card {
+    border: 1px solid #ddd; /* Đường viền xung quanh thẻ sản phẩm */
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 200px; /* Chiều rộng cố định cho thẻ sản phẩm */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Phóng to khi hover */
+}
+
+/* Định dạng liên kết sản phẩm */
+.product-link {
+    text-decoration: none;
+    color: #333; /* Màu chữ */
+    font-weight: bold;
+}
+
+/* Định dạng hình ảnh sản phẩm */
+.product-image {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của thẻ */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+    border-radius: 5px; /* Bo góc cho hình ảnh */
+}
+
+
+/* Đặt nền và căn giữa container */
+.custom-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng box */
+.custom-box {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Định dạng layout */
+.custom-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Định dạng hình ảnh */
+.custom-image-wrapper {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.custom-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Định dạng chi tiết sản phẩm */
+.custom-details {
+  flex: 2;
+}
+
+/* Định dạng tiêu đề sản phẩm */
+.custom-product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Định dạng phần thông tin */
+.custom-info-section {
+  margin-bottom: 20px;
+}
+
+.custom-section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.custom-description {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Định dạng nút */
+.custom-buttons {
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.custom-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.custom-edit-button {
+  background-color: #4CAF50; /* Màu xanh lá cây */
+  color: white;
+}
+
+.custom-edit-button:hover {
+  background-color: #45a049; /* Màu xanh lá cây đậm khi hover */
+}
+
+.custom-delete-button {
+  background-color: #f44336; /* Màu đỏ */
+  color: white;
+}
+
+.custom-delete-button:hover {
+  background-color: #e53935; /* Màu đỏ đậm khi hover */
+}
+
+.custom-back-button {
+  background-color: #2196F3; /* Màu xanh dương */
+  color: white;
+}
+
+.custom-back-button:hover {
+  background-color: #1976D2; /* Màu xanh dương đậm khi hover */
+}
+
+
+
+/* Đặt nền và căn giữa container */
+.custom-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Định dạng box */
+  .custom-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Định dạng layout */
+  .custom-layout {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Định dạng hình ảnh */
+  .custom-image-wrapper {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .custom-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Định dạng chi tiết sản phẩm */
+  .custom-details {
+    flex: 2;
+  }
+  
+  /* Định dạng tiêu đề sản phẩm */
+  .custom-product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Định dạng phần thông tin */
+  .custom-info-section {
+    margin-bottom: 20px;
+  }
+  
+  .custom-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .custom-description {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Định dạng nút */
+  .custom-buttons {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các nút */
+  }
+  
+  .custom-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-edit-button {
+    background-color: #4CAF50; /* Màu xanh lá cây */
+    color: white;
+  }
+  
+  .custom-edit-button:hover {
+    background-color: #45a049; /* Màu xanh lá cây đậm khi hover */
+  }
+  
+  .custom-delete-button {
+    background-color: #f44336; /* Màu đỏ */
+    color: white;
+  }
+  
+  .custom-delete-button:hover {
+    background-color: #e53935; /* Màu đỏ đậm khi hover */
+  }
+  
+  .custom-back-button {
+    background-color: #2196F3; /* Màu xanh dương */
+    color: white;
+  }
+  
+  .custom-back-button:hover {
+    background-color: #1976D2; /* Màu xanh dương đậm khi hover */
+  }
+
+
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.edit-form {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.hint {
+  font-size: 0.9em;
+  color: #6c757d;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.form-actions {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Đặt kiểu cho tiêu đề */
+.signup-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Đặt kiểu cho biểu mẫu */
+.signup-form {
+  max-width: 400px; /* Chiều rộng tối đa của biểu mẫu */
+  margin: 0 auto; /* Căn giữa biểu mẫu */
+  padding: 20px;
+  border: 1px solid #ccc; /* Đường viền xung quanh biểu mẫu */
+  border-radius: 8px; /* Bo tròn các góc */
+  background-color: #f9f9f9; /* Màu nền của biểu mẫu */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho biểu mẫu */
+}
+
+/* Đặt kiểu cho các nhóm trường */
+.form-group {
+  margin-bottom: 15px; /* Khoảng cách giữa các trường */
+}
+
+/* Đặt kiểu cho nhãn */
+.form-label {
+  display: block; /* Hiển thị nhãn dưới dạng khối */
+  margin-bottom: 5px; /* Khoảng cách dưới nhãn */
+  font-weight: bold; /* Làm đậm nhãn */
+}
+
+/* Đặt kiểu cho các trường nhập */
+.form-input {
+  width: 100%; /* Chiều rộng 100% */
+  padding: 10px; /* Khoảng cách bên trong */
+  border: 1px solid #ccc; /* Đường viền cho trường nhập */
+  border-radius: 4px; /* Bo tròn các góc */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+}
+
+/* Đặt kiểu cho yêu cầu mật khẩu */
+.password-requirement {
+  font-size: 12px; /* Kích thước chữ nhỏ hơn */
+  color: #666; /* Màu chữ xám */
+}
+
+/* Đặt kiểu cho nút gửi */
+.btn {
+  display: inline-block; /* Hiển thị nút dưới dạng khối */
+  padding: 10px 15px; /* Khoảng cách bên trong */
+  font-size: 16px; /* Kích thước chữ */
+  color: #fff; /* Màu chữ trắng */
+  background-color: #007bff; /* Màu nền của nút */
+  border: none; /* Không có đường viền */
+  border-radius: 4px; /* Bo tròn các góc */
+  cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua nút */
+  text-align: center; /* Căn giữa chữ trong nút */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+/* Hiệu ứng khi di chuột qua nút */
+.btn:hover {
+  background-color: #0056b3; /* Màu nền khi di chuột qua */
+}
+
+/* Đặt kiểu cho các liên kết */
+.signup-form a {
+  color: #007bff; /* Màu chữ cho liên kết */
+  text-decoration: none; /* Không gạch chân */
+}
+
+.signup-form a:hover {
+  text-decoration: underline; /* Gạch chân khi di chuột qua */
+}
+
+
+
+
+
+
+
+
+
+
+/* link */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*đăng nhập*/
+.dang-nhap-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.dang-nhap-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dang-nhap-form-group {
+  margin-bottom: 15px;
+}
+
+.dang-nhap-form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.dang-nhap-form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.dang-nhap-form-actions {
+  text-align: center;
+}
+
+.dang-nhap-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dang-nhap-btn:hover {
+  background-color: #0056b3;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 5px;
+}
+
+
+
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.logo img {
+  height: 50px; /* Điều chỉnh kích thước logo */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff6347; /* Màu khi hover */
+}
+
+
+
+
+
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-media a:hover {
+  color: #ff6347; /* Màu khi hover */
+}
+
+
+
+
+
+
+
+
+/* link*/
+.link-container {
+  text-align: center; /* Căn giữa nội dung */
+  margin-top: 20px; /* Khoảng cách phía trên */
+}
+
+.link-item {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.link-item:hover {
+  background-color: #f0f0f0;
+  color: #0056b3;
+  border: 1px solid #007bff;
+}
+
+.link-item:active {
+  background-color: #e0e0e0;
+}
+

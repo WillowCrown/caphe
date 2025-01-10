@@ -1,0 +1,26 @@
+<h2 class="dang-nhap-title">Đăng Nhập</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'dang-nhap-form' }) do |f| %>
+  <div class="dang-nhap-form-group">
+    <%= f.label :email, class: 'dang-nhap-form-label' %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'dang-nhap-form-control' %>
+  </div>
+
+  <div class="dang-nhap-form-group">
+    <%= f.label :password, class: 'dang-nhap-form-label' %>
+    <%= f.password_field :password, autocomplete: "current-password", class: 'dang-nhap-form-control' %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="dang-nhap-form-group remember-me">
+      <%= f.check_box :remember_me, class: 'checkbox' %>
+      <%= f.label :remember_me, class: 'dang-nhap-form-label' %>
+    </div>
+  <% end %>
+
+  <div class="dang-nhap-form-actions">
+    <%= f.submit "Đăng Nhập", class: 'dang-nhap-btn' %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
